@@ -8,6 +8,7 @@ const Join = () => {
         firstname: '',
         lastname: '',
         email: '',
+        bio: '',
         password: '',
         passagain: ''
     });
@@ -20,7 +21,7 @@ const Join = () => {
     }
 
     const formValid = () => {
-        return info.firstname.length >= 2 && info.lastname.length >= 2 && info.email.length >= 5 && info.password.length >= 8 && info.passagain.length >= 8 && info.password === info.passagain; 
+        return info.firstname.length >= 2 && info.lastname.length >= 2 && info.email.length >= 5 && info.bio.length >=20 && info.password.length >= 8 && info.passagain.length >= 8 && info.password === info.passagain; 
     }
 
     return (
@@ -49,6 +50,14 @@ const Join = () => {
                         <div className="flex flex-col items-center md:items-start">
                             <input value={info.email} onChange={handleChange} className="rounded-full ml-2 mr-5 mb-2 px-3 md:mb-0 border-2 border-red-600 text-center hover:placeholder:brightness-50" name="email" type="email" placeholder="Unesi email..." required/>
                             {(info.email.length < 5 && info.email.length > 0) ? <p className='text-red-700'>E-mail mora imati najmanje 5 karaktera!</p> : null}
+                        </div>
+                    </div>
+
+                    <div className="bio flex flex-col justify-center mb-12 border-2 border-red-200 py-4 md:flex-row items-center md:items-start">
+                        <label className='text-red-700' htmlFor="email">Napiši nešto o sebi:</label>
+                        <div className="flex flex-col items-center md:items-start">
+                            <textarea value={info.bio} onChange={handleChange} className="rounded-lg w-50 h-60 md:w-60 md:h-30 ml-2 mr-5 mb-2 px-3 md:mb-0 border-2 border-red-600 text-center hover:placeholder:brightness-50 resize-none" name="bio" placeholder="Zbog čega ste zainteresovani za SFC?..." required/>
+                            {(info.bio.length < 20 && info.bio.length > 0) ? <p className='text-red-700'>Biografija mora imati preko 20 karaktera!</p> : null}
                         </div>
                     </div>
 
