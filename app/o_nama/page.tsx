@@ -28,7 +28,7 @@ export default function Home() {
             <p className="mx-[3%] mb-5 text-xl text-red-600 text-center md:text-2xl"><span className="font-semibold">Street Fleet Crew</span> je <span className="font-semibold">zajednica strastvenih ljubitelja automobila</span> koja okuplja entuzijaste svih generacija.</p>
             <p className="mx-[3%] text-xl text-red-600 text-center md:text-2xl">Naš cilj je stvaranje prostora gdje svaki član može podijeliti svoju <span className="font-semibold">ljubav prema automobilima</span>, naučiti nešto novo i steći prijatelje koji dijele iste interese.</p>
             <div className="flex justify-center items-center mt-10">
-              <button onClick={show} type="button" className={showMore ? "hidden" : "px-3 py-2 bg-red-500 text-white rounded-full border-4 border-red-600 hover:bg-red-600 hover:border-red-500 hover:scale-90"}>Zanima Vas više?</button>
+              <button onClick={show} type="button" className={showMore ? "hidden" : "px-4 py-2 bg-red-500 hover:bg-red-700 text-white rounded-md hover:rounded-full"}>Zanima Vas više?</button>
             </div>
           </article>
 

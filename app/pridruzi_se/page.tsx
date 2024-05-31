@@ -28,7 +28,7 @@ const Join = () => {
         <>
             <h1 className="text-2xl text-red-500 font-bold my-9 text-center md:text-4xl">Pridruži se i postani dio ekipe!</h1>
             <form method="POST">
-                <div className="wrapper mt-5 text-center">
+                <div className="wrapper mt-5 text-center mb-4">
                     <div className="names flex flex-col md:flex-row justify-center items-center mb-12 border-2 border-red-200 py-4">
                         <div className="flex flex-col items-center md:items-start md:flex-row">
                             <div className="flex flex-col items-center md:items-start">
@@ -48,7 +48,7 @@ const Join = () => {
                     <div className="email flex flex-col justify-center mb-12 border-2 border-red-200 py-4 md:flex-row items-center md:items-start">
                         <label className='text-red-700' htmlFor="email">Unesi svoj email:</label>
                         <div className="flex flex-col items-center md:items-start">
-                            <input value={info.email} onChange={handleChange} className="rounded-full ml-2 mr-5 mb-2 px-3 md:mb-0 border-2 border-red-600 text-center hover:placeholder:brightness-50" name="email" type="email" placeholder="Unesi email..." required/>
+                            <input value={info.email} onChange={handleChange} className="rounded-full ml-2 mr-5 mb-2 px-3 md:mb-0 border-2 border-red-400 text-center hover:placeholder:brightness-50" name="email" type="email" placeholder="Unesi email..." required/>
                             {(info.email.length < 5 && info.email.length > 0) ? <p className='text-red-700'>E-mail mora imati najmanje 5 karaktera!</p> : null}
                         </div>
                     </div>
