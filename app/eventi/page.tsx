@@ -12,6 +12,7 @@ const Events = () => {
   ];
 
   return (
+    <div className="relative bg-gradient-to-l from-red-100 to-red-300 min-h-screen pb-2">
     <div className="container mx-auto p-4">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
         {events.map((event) => (
@@ -35,6 +36,7 @@ const Events = () => {
           </div>
         ))}
       </div>
+    </div>
     </div>
   );
 };
