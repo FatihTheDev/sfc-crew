@@ -27,7 +27,7 @@ export default function Home() {
               </button>
               <div className={`${activeIndex === 0 ? "block" : "hidden"} mt-2 px-4 py-2 bg-gray-100 rounded-md transition-all duration-500 ease-in-out transform ${activeIndex === 0 ? 'opacity-100 max-h-screen' : 'opacity-0 max-h-0'}`}>
                 <p className="text-red-600">
-                  <span className="font-semibold">Street Fleet Crew</span> je <span className="font-semibold">zajednica strastvenih ljubitelja automobila</span> koja okuplja entuzijaste svih generacija. Naš cilj je stvaranje prostora gdje svaki član može podijeliti svoju <span className="font-semibold">ljubav prema automobilima</span>, naučiti nešto novo i steći prijatelje koji dijele iste interese.
+                 <span className="font-semibold">Street Fleet Crew</span> je <span className="font-semibold">zajednica strastvenih ljubitelja automobila</span> koja okuplja entuzijaste svih generacija. Naš cilj je stvaranje prostora gdje svaki član može podijeliti svoju <span className="font-semibold">ljubav prema automobilima</span>, naučiti nešto novo i steći prijatelje koji dijele iste interese.
                 </p>
               </div>
             </div>
