@@ -5,7 +5,7 @@ import { useState } from "react";
 export default function Home() {
   const [activeIndex, setActiveIndex] = useState(null);
 
-  const toggleFaq = (index) => {
+  const toggleFaq = (index:any) => {
     setActiveIndex(activeIndex === index ? null : index);
   };
 
